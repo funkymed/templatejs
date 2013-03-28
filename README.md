@@ -1,5 +1,6 @@
 #TemplateJS
 ==========
+Simple, easy, and ultra lightweight template-engine
 
 ##Author
 
