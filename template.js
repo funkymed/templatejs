@@ -1,3 +1,8 @@
+/**
+ * TemplateJS
+ * by Cyril Pereira
+ * http://www.cyrilpereira.com
+ */
 var template = {
     templates:{},
     initialize:function()
@@ -8,19 +13,24 @@ var template = {
             t.templates[this.id]=$(this).html();
             $(this).remove();
         });
+        $('#templates').remove();
     },
     getTemplate:function(t)
     {
         return (this.templates[t]) ? this.templates[t] : false;
     },
-    format:function(template,args)
+    format:function(t,args)
     {
-        if(!template)
-            return false;
-        if(!args)
-            return template;
+        if(!t)      return false;
+        if(!args)   return t;
+
         for(var b in args)
-            template = template.replace('{'+b+'}',args[b]);
-        return template;
+        {
+            var pattern = "{"+b+"}",
+                re = new RegExp(pattern, "g");
+
+            t = t.replace(re,args[b]);
+        }
+        return t;
     }
 }
