@@ -4,11 +4,10 @@ Simple, easy, and ultra lightweight template-engine
 
 ##Author
 
-Cyril Pereira
-http://www.cyrilpereira.com
+Cyril Pereira <cyril.pereira@gmail.com>
 
 ##Demo
-http://cyrilpereira.com/templatejs/
+http://med.planet-d.net/demo/web/templatejs
 
 ##Documentation
 
